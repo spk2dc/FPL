@@ -5,12 +5,9 @@
   "Id": "CuVhD97m-0287NeJLjf-Cg",
   "Reference": "qmDWxQbGnUq14r6bGQX8XA/CuVhD97m-0287NeJLjf-Cg",
   "ParentRef": "qmDWxQbGnUq14r6bGQX8XA/sbteYPvmbUyJTJTJEAA8Mg",
-  "Created": "2024-02-22T15:21:29.5183885Z",
-  "Updated": "2024-02-22T15:23:00.4034213Z",
+  "Created": "2024-02-22T15:34:51.5384571Z",
+  "Updated": "2024-02-22T15:34:51.5384571Z",
   "CreatedBy": [
-    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
-  ],
-  "UpdatedBy": [
     "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
   ]
 }

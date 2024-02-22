@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>848,3805.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>848,4924</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>WPL_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -111,7 +111,7 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="FPL" sap:VirtualizedContainerService.HintSize="705.6,3740.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="FPL" sap:VirtualizedContainerService.HintSize="705.6,4859.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="author" />
       <Variable x:TypeArguments="x:String" Name="title" />
@@ -122,26 +122,26 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="[index]" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="643.2,3652" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[list]">
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="[index]" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="643.2,4770.4" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[list]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:String">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:String" Name="currentItem" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="609.6,3463.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="609.6,4581.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="547.2,182.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[index.ToString+&quot;: &quot;+currentItem]" />
-            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="suggest" sap:VirtualizedContainerService.HintSize="547.2,3194.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Always" ScopeGuid="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Version="V2">
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="suggest" sap:VirtualizedContainerService.HintSize="547.2,4312.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Always" ScopeGuid="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="513.6,2954.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="513.6,4072.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="year" />
                     </Sequence.Variables>
@@ -174,6 +174,17 @@
                         <InArgument x:TypeArguments="x:String">[currentItem.Split(" by.")(1).Split(" - year ")(1).Split(",")(0)]</InArgument>
                       </Assign.Value>
                     </Assign>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'catalog'" sap:VirtualizedContainerService.HintSize="451.2,197.6" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://us.openforms.com/Form/1761c561-177c-4f91-9d1d-30d88b3dff75" ContentHash="v_DK3uppDku1phV_nltOyQ" DesignTimeRectangle="559, 1051, 73, 31" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'unchecked'" FullSelectorArgument="&lt;webctrl tag='LABEL' innertext='No' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' innertext='No' check:text='unchecked' /&gt;" Guid="ae099a8a-94b5-4481-9d57-8f1675a64381" InformativeScreenshot="83940fbdfaaef2d0dfc78eb9c652df56.png" Reference="qmDWxQbGnUq14r6bGQX8XA/624GRJhfxESWYC2g3SP3Tw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="559, 971, 800, 25" ElementType="Text" FriendlyName="'Search the'" FullSelectorArgument="&lt;webctrl tag='P' innertext='Search the catalog now (opens in a new window)' idx='2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' innertext='Search the catalog now (opens in a new window)' check:text='Search the catalog now (opens in a new window)' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
                     <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_28" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="Senthil Kannan" Version="V3">
                       <uix:NTypeInto.Target>
                         <uix:TargetAnchorable BrowserURL="https://us.openforms.com/Form/1761c561-177c-4f91-9d1d-30d88b3dff75" ContentHash="BHULxweqEUGPu3GYf2N2TQ" DesignTimeRectangle="559, 680, 800, 48" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'name'" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='NameRequired' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' aaname='NameRequired' /&gt;" Guid="faa56e47-d2e1-403d-8ca1-dea7c916af38" InformativeScreenshot="636a588fd780f51dd9b39afbe392eb53.png" IsResponsive="True" Reference="qmDWxQbGnUq14r6bGQX8XA/CFFl-YcOr0qkjsoYfSvrbw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
@@ -262,11 +273,63 @@
                         </uix:TargetAnchorable>
                       </uix:NClick.Target>
                     </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'library'" sap:VirtualizedContainerService.HintSize="451.2,197.6" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://us.openforms.com/Form/1761c561-177c-4f91-9d1d-30d88b3dff75" ContentHash="WsBuNi5ra0WVpPARSFiveA" DesignTimeRectangle="559, 949, 121, 31" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'unchecked'" FullSelectorArgument="&lt;webctrl aaname='Bealeton' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Bealeton' tag='LABEL' check:text='unchecked' /&gt;" Guid="514105e5-ff28-4eb0-8906-7c177bfaf48d" InformativeScreenshot="5b2e063bd6caa594fbeadd11fe4a7bc3.png" Reference="qmDWxQbGnUq14r6bGQX8XA/5yFonWu_9UC8M8vFVohg3Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="559, 775, 800, 75" FriendlyName="'If the'" FullSelectorArgument="&lt;webctrl tag='LEGEND' aaname='If the requested item is purchased, a hold will automatically be placed for you. Please select your preferred pickup location: ' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LEGEND' aaname='If the requested item is purchased, a hold will automatically be placed for you. Please select your preferred pickup location: ' check:text='If the requested item is purchased, a hold will automatically be placed for you. Please select your' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'captcha'" sap:VirtualizedContainerService.HintSize="451.2,197.6" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6LfutxYUAAAAAKsbhBq2YiN-lfXcLQ-r5iFDlE8n&amp;co=aHR0cHM6Ly91cy5vcGVuZm9ybXMuY29tOjQ0Mw..&amp;hl=en&amp;type=image&amp;v=x5WWoE57Fv0d6ATKsLDIAKnt&amp;theme=light&amp;size=normal&amp;badge=bottomright&amp;cb=3iqxm0ccxinw" ContentHash="yCcoMX-mNEGDQBqU3vABVQ" DesignTimeRectangle="575, 897, 34, 34" DesignTimeScaleFactor="1.25" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl name='a-8lh7hjat7z8' tag='IFRAME' /&gt;&lt;webctrl tag='DIV' parentid='recaptcha-anchor' idx='1' /&gt;" FuzzySelectorArgument="&lt;webctrl name='a-8lh7hjat7z8' tag='IFRAME' /&gt;&lt;webctrl tag='DIV' parentid='recaptcha-anchor' /&gt;" Guid="506b8496-1684-4b18-82ef-7e240e3706e1" InformativeScreenshot="9f17748c389f6a08562c52c340297f65.png" Reference="qmDWxQbGnUq14r6bGQX8XA/xIgTNpAK_kaqZk1hT5awHw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="559, 832, 800, 38" ElementType="Text" FriendlyName="'Please complete'" FullSelectorArgument="&lt;webctrl tag='DIV' aaname='Please complete the following:' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' aaname='Please complete the following:' check:text='Please complete the following:' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
                     <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'submit'" sap:VirtualizedContainerService.HintSize="451.2,197.6" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Version="V3">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="https://us.openforms.com/Form/1761c561-177c-4f91-9d1d-30d88b3dff75" ContentHash="2ONboV-mNkyEvXKKVc80cw" DesignTimeRectangle="1226, 1023, 165, 65" DesignTimeScaleFactor="1.25" FriendlyName="'submit'" FullSelectorArgument="&lt;webctrl tag='DIV' class='inner-border of-colour-secondary-inner-border' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' class='inner-border of-colour-secondary-inner-border' /&gt;" Guid="15104e2f-738b-4854-a246-0c4da94d7dd6" InformativeScreenshot="1a8eb14f6346bfeb63823573772fb7c9.png" Reference="qmDWxQbGnUq14r6bGQX8XA/N4Obj9TKQEKNzbOwODhFLA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
                       </uix:NClick.Target>
                     </uix:NClick>
+                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="another" sap:VirtualizedContainerService.HintSize="451.2,525.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="e95e96ba-16e2-4ecc-8f36-88fc3ed4d58b" Version="V2">
+                      <uix:NApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="x:Object">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,268.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'another'" sap:VirtualizedContainerService.HintSize="353.6,182.4" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://us.openforms.com/FormSubmit/PostSubmission?formVersionId=62235&amp;responseId=38df2647-0705-4ae4-9d7c-54f3a3336ff2" ContentHash="s3qNtIdTDUic-EIoz0wd_Q" DesignTimeRectangle="1022, 952, 191, 30" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'purchase request'" FullSelectorArgument="&lt;webctrl aaname='purchase request' href='https://us.openforms.com/Form/1761c561-177c-4f91-9d1d-30d88b3dff75' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='purchase request' href='https://us.openforms.com/Form/1761c561-177c-4f91-9d1d-30d88b3dff75' check:text='purchase request' /&gt;" Guid="2a6c745e-c4a9-4f27-8df8-b37554c86aae" InformativeScreenshot="7cf2425274efb2c7616cf372aa9fd9ab.png" Reference="qmDWxQbGnUq14r6bGQX8XA/CuVhD97m-0287NeJLjf-Cg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="559, 949, 800, 38" ElementType="Text" FriendlyName="'Have another'" FullSelectorArgument="&lt;webctrl tag='P' aaname='Have another suggestion? Fill out another .' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' aaname='Have another suggestion? Fill out another .' check:text='Have another suggestion? Fill out another purchase request.' /&gt;" SearchSteps="FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                          </Sequence>
+                        </ActivityAction>
+                      </uix:NApplicationCard.Body>
+                      <uix:NApplicationCard.TargetApp>
+                        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="QJam_d5KbEO3KQFB81kwrg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gYMAwISkQf3ogAAAtZJREFUWEfVl8trU0EUxq8gqK3xX6huLfWB+Nj4gNbk5ilVosSFVk2TUgU3Lgoi7aLUheBrISjuVMRqadHkBhXrG9xVcF3UjQ8sCi6qtZr6O2EulLRJ596bXHHgYyZn7pzvmzNnJjOGbkkFh4wDbYOL2kP3ViTM/PqYmc/Ewtb1aNh6GwkXZqhf7zJzq+hTIzyW1M4h43DrTSEM4LQZwhSE5yB6Fg0XPkL6S4hnYTpmWnvoVx5cFiHeGntsxM38Zggv4vAlhJ8h+F1GOAd8nyYKGxNmLoFoQRxswyaTUAwLFD4WLIP4wXwkVVAkAkfVuCKYVphEWK/RMWUkQyOKpUphgCAAXoH5iCpBBBwjWqPlfYh6uDc4sjQZ9EWANUcAEXgCeUO9BcwgoJPli5ADXSBNHl0QO6KeEv4GrSXgY4FbAV2glxkPg9v4eVGys3OYfaNWBHAgqGkOIEA/Av+7gG7IrhD6N2AMjEufXwLsJNxCArZTx0nCPuxFhOgLYJAgQCjdREAOohztSfBd1c4iIEcmcCvAew44FCB/SD9V238BOB5gubK0f5R+m1aGsUlsPeAEuCp2RzngRACOLyPiFO0p+Y2ALDiOXXbCJZBX39VtCeRf74/d/hc5MBu1EcC6lbYhA90I6CbcXNMK76nHqeXm5EwATrwcRHIj2sBBFKEOMpGT2J0dRB4ESATkILpD+wuQ2X+VPr8iUJscYAZu7wO1EcAALzeiLOuepj4DTkM8KHZHOcAATwIgPQhhP+gDN8Tul4DqS+DDpbSiACJgcS1fohUB9q/9MLlf7mgB2NtwGBHfwAS2Cep32DM7oo8MrQjs52m2PToqp+EmQnceh89x8glnOk+zI4hv4iBaC9ZwpLeApt2hu4t5YyoGzSJvxI7WW/I4XY6T1TxO90FwVhIKQR8grM/jtFKRyBxqKwmS5/k6BHUi6BqE9vN8jNmvpE+N0CmG8RfoqajWL0kEIQAAAABJRU5ErkJggg==" InformativeScreenshot="cbb4c465a80e9b92739e5387792e7b08.jpg" Reference="qmDWxQbGnUq14r6bGQX8XA/sbteYPvmbUyJTJTJEAA8Mg" Selector="&lt;html app='chrome.exe' title='Suggest a Purchase' /&gt;" Title="Suggest a Purchase" Url="https://us.openforms.com/FormSubmit/PostSubmission?formVersionId=62235&amp;responseId=38df2647-0705-4ae4-9d7c-54f3a3336ff2" />
+                      </uix:NApplicationCard.TargetApp>
+                    </uix:NApplicationCard>
                     <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="451.2,295.2" sap2010:WorkflowViewState.IdRef="CommentOut_1">
                       <ui:CommentOut.Body>
                         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,192" sap2010:WorkflowViewState.IdRef="Sequence_9">
