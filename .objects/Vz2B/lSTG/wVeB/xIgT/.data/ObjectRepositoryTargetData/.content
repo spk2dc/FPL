@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="yCcoMX-mNEGDQBqU3vABVQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6LfutxYUAAAAAKsbhBq2YiN-lfXcLQ-r5iFDlE8n&amp;co=aHR0cHM6Ly91cy5vcGVuZm9ybXMuY29tOjQ0Mw..&amp;hl=en&amp;type=image&amp;v=x5WWoE57Fv0d6ATKsLDIAKnt&amp;theme=light&amp;size=normal&amp;badge=bottomright&amp;cb=3iqxm0ccxinw" DesignTimeRectangle="575, 897, 34, 34" DesignTimeScaleFactor="1.25" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl name='a-8lh7hjat7z8' tag='IFRAME' /&gt;&lt;webctrl tag='DIV' parentid='recaptcha-anchor' idx='1' /&gt;" FuzzySelectorArgument="&lt;webctrl name='a-8lh7hjat7z8' tag='IFRAME' /&gt;&lt;webctrl tag='DIV' parentid='recaptcha-anchor' /&gt;" Guid="506b8496-1684-4b18-82ef-7e240e3706e1" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="559, 832, 800, 38" ElementType="Text" FriendlyName="'Please complete'" FullSelectorArgument="&lt;webctrl tag='DIV' aaname='Please complete the following:' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' aaname='Please complete the following:' check:text='Please complete the following:' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9f17748c389f6a08562c52c340297f65.png" xmlns="">0C_1Byg78NEGK_Uos4OH0Zw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="s3qNtIdTDUic-EIoz0wd_Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://us.openforms.com/FormSubmit/PostSubmission?formVersionId=62235&amp;responseId=38df2647-0705-4ae4-9d7c-54f3a3336ff2" DesignTimeRectangle="1022, 952, 191, 30" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'purchase request'" FullSelectorArgument="&lt;webctrl aaname='purchase request' href='https://us.openforms.com/Form/1761c561-177c-4f91-9d1d-30d88b3dff75' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='purchase request' href='https://us.openforms.com/Form/1761c561-177c-4f91-9d1d-30d88b3dff75' check:text='purchase request' /&gt;" Guid="2a6c745e-c4a9-4f27-8df8-b37554c86aae" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="559, 949, 800, 38" ElementType="Text" FriendlyName="'Have another'" FullSelectorArgument="&lt;webctrl tag='P' aaname='Have another suggestion? Fill out another .' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' aaname='Have another suggestion? Fill out another .' check:text='Have another suggestion? Fill out another purchase request.' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7cf2425274efb2c7616cf372aa9fd9ab.png" xmlns="">0m_mWVb1nY0mrs2dONgoGlQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

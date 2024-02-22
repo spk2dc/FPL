@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="01hOFVop2ECWTxTrptYYtg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://us.openforms.com/Form/1761c561-177c-4f91-9d1d-30d88b3dff75" DesignTimeRectangle="559, 599, 151, 31" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'unchecked'" FullSelectorArgument="&lt;webctrl aaname='E-audiobook' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='E-audiobook' tag='LABEL' check:text='unchecked' /&gt;" Guid="12f93b51-ec07-48d4-b633-6de977779126" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="559, 426, 190, 38" FriendlyName="'Format Required'" FullSelectorArgument="&lt;webctrl tag='LEGEND' aaname='Format ' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LEGEND' aaname='Format ' check:text='Format Required' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="cd6fd839d7c21a645597e8cd16e6ab4f.png" xmlns="">0AG3gw_FcVkaMfSQnGxyQLw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

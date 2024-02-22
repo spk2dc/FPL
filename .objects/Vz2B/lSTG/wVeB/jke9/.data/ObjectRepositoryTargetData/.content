@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="vs9bvV5XV0GPs-VDlMX62Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://us.openforms.com/Form/1761c561-177c-4f91-9d1d-30d88b3dff75" DesignTimeRectangle="559, 497, 800, 48" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT field-data-144995…'" FullSelectorArgument="&lt;webctrl type='email' aaname='E-Mail address' /&gt;" FuzzySelectorArgument="&lt;webctrl type='email' aaname='E-Mail address' /&gt;" Guid="b2b8d590-5b3d-4acc-8a98-f0ed1796625f" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="559, 450, 160, 30" ElementType="Text" FriendlyName="'E-Mail address'" FullSelectorArgument="&lt;webctrl tag='LABEL' aaname='E-Mail address' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' aaname='E-Mail address' check:text='E-Mail address' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ddb01a08cad267b74eafdbf8549557c7.png" xmlns="">0S3trJjO9G0mgvDeqCAh8zg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

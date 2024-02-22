@@ -1,0 +1,294 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="WPL" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="list" Type="InArgument(s:String[])" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>848,3805.6</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>WPL_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="FPL" sap:VirtualizedContainerService.HintSize="705.6,3740.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="author" />
+      <Variable x:TypeArguments="x:String" Name="title" />
+      <Variable x:TypeArguments="x:Int32" Name="index" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="[index]" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="643.2,3652" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[list]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="x:String">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:String" Name="currentItem" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="609.6,3463.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="547.2,182.4" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[index.ToString+&quot;: &quot;+currentItem]" />
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="suggest" sap:VirtualizedContainerService.HintSize="547.2,3194.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Always" ScopeGuid="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="513.6,2954.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="year" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="451.2,122.4" sap2010:WorkflowViewState.IdRef="Assign_5">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[title]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[currentItem.Split(" by.")(0)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="451.2,122.4" sap2010:WorkflowViewState.IdRef="Assign_7">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[author]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[currentItem.Split(" by.")(1).Split(" - year ")(0)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="451.2,122.4" sap2010:WorkflowViewState.IdRef="Assign_8">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[year]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[currentItem.Split(" by.")(1).Split(" - year ")(1).Split(",")(0)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_28" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="Senthil Kannan" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://us.openforms.com/Form/1761c561-177c-4f91-9d1d-30d88b3dff75" ContentHash="BHULxweqEUGPu3GYf2N2TQ" DesignTimeRectangle="559, 680, 800, 48" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'name'" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='NameRequired' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' aaname='NameRequired' /&gt;" Guid="faa56e47-d2e1-403d-8ca1-dea7c916af38" InformativeScreenshot="636a588fd780f51dd9b39afbe392eb53.png" IsResponsive="True" Reference="qmDWxQbGnUq14r6bGQX8XA/CFFl-YcOr0qkjsoYfSvrbw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="559, 633, 172, 30" ElementType="Text" FriendlyName="'name'" FullSelectorArgument="&lt;webctrl tag='LABEL' aaname='Name' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' aaname='Name' check:text='NameRequired' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'card'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_27" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="2000184615" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://us.openforms.com/Form/1761c561-177c-4f91-9d1d-30d88b3dff75" ContentHash="8LIKe2iQU0uTrw83fWpsOw" DesignTimeRectangle="559, 566, 800, 48" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'card'" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='Your ten digit Fauquier Public Library card numberRequired' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' aaname='Your ten digit Fauquier Public Library card numberRequired' /&gt;" Guid="92e6e2f4-3041-48d0-90c5-b9fb8f915874" InformativeScreenshot="97b2a152abca124e25f5610bce3e1265.png" IsResponsive="True" Reference="qmDWxQbGnUq14r6bGQX8XA/seQmJWKDGUGT2r5nsgrvuw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="559, 494, 654, 30" ElementType="Text" FriendlyName="'card'" FullSelectorArgument="&lt;webctrl tag='LABEL' aaname='Your ten digit Fauquier Public Library card number' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' aaname='Your ten digit Fauquier Public Library card number' check:text='Your ten digit Fauquier Public Library card numberRequired' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'phone'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_30" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="5712507368" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://us.openforms.com/Form/1761c561-177c-4f91-9d1d-30d88b3dff75" ContentHash="trItjHTd4E-kMH55rN3uMA" DesignTimeRectangle="559, 508, 800, 48" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'phone'" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='PhoneRequired' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' aaname='PhoneRequired' /&gt;" Guid="3ba6aec1-2425-460c-9b66-d66b39f515ec" InformativeScreenshot="12ee055fc4d3488ce179bce2f65f832a.png" IsResponsive="True" Reference="qmDWxQbGnUq14r6bGQX8XA/J8VAJXMpP0WJtjaybRa-WQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="559, 461, 177, 30" ElementType="Text" FriendlyName="'phone'" FullSelectorArgument="&lt;webctrl tag='LABEL' aaname='Phone' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' aaname='Phone' check:text='PhoneRequired' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_29" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="bionicle0107@yahoo.com" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://us.openforms.com/Form/1761c561-177c-4f91-9d1d-30d88b3dff75" ContentHash="vs9bvV5XV0GPs-VDlMX62Q" DesignTimeRectangle="559, 497, 800, 48" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'email'" FullSelectorArgument="&lt;webctrl type='email' aaname='E-Mail address' /&gt;" FuzzySelectorArgument="&lt;webctrl type='email' aaname='E-Mail address' /&gt;" Guid="b2b8d590-5b3d-4acc-8a98-f0ed1796625f" InformativeScreenshot="ddb01a08cad267b74eafdbf8549557c7.png" IsResponsive="True" Reference="qmDWxQbGnUq14r6bGQX8XA/jke9ld2wWkCSvQ7V508m0Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="559, 450, 160, 30" ElementType="Text" FriendlyName="'email'" FullSelectorArgument="&lt;webctrl tag='LABEL' aaname='E-Mail address' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' aaname='E-Mail address' check:text='E-Mail address' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'confirm email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_31" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="bionicle0107@yahoo.com" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://us.openforms.com/Form/1761c561-177c-4f91-9d1d-30d88b3dff75" ContentHash="jtkQTPlC8UG_gIcxUS6lEA" DesignTimeRectangle="559, 607, 800, 48" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'confirm email'" FullSelectorArgument="&lt;webctrl aaname='Confirm email address' type='email' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Confirm email address' type='email' /&gt;" Guid="46080197-f9e6-4ff1-a224-22e40b4fd7c3" InformativeScreenshot="b1f96b86823580c695ff04c75ed5480b.png" IsResponsive="True" Reference="qmDWxQbGnUq14r6bGQX8XA/vKd06nWBkUaxuKIItHbhdw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="559, 570, 245, 38" ElementType="Text" FriendlyName="'confirm email'" FullSelectorArgument="&lt;webctrl tag='LABEL' aaname='Confirm email address' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' aaname='Confirm email address' check:text='Confirm email address' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'author'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_26" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="[author]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://us.openforms.com/Form/1761c561-177c-4f91-9d1d-30d88b3dff75" ContentHash="qu6hIsd0DEuehb7bNqMo_g" DesignTimeRectangle="559, 597, 800, 48" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'author'" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='AuthorRequired' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' aaname='AuthorRequired' /&gt;" Guid="2a47cb0c-0330-4aa2-aa7f-c047d24914fd" InformativeScreenshot="e2a74326d635a8231730d1bed60e4e65.png" IsResponsive="True" Reference="qmDWxQbGnUq14r6bGQX8XA/zdYTSbmaBUavjpwuVci8gg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="559, 550, 180, 30" ElementType="Text" FriendlyName="'author'" FullSelectorArgument="&lt;webctrl tag='LABEL' aaname='Author' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' aaname='Author' check:text='AuthorRequired' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'title'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="451.2,258.4" sap2010:WorkflowViewState.IdRef="NTypeInto_25" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Text="[title]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://us.openforms.com/Form/1761c561-177c-4f91-9d1d-30d88b3dff75" ContentHash="jzc301hEJ0eXMQzhnKug2Q" DesignTimeRectangle="559, 720, 800, 48" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'title'" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='TitleRequired' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' aaname='TitleRequired' /&gt;" Guid="24d3eedd-3aa4-4699-8779-2ab50ce2057f" InformativeScreenshot="b81f425fc5a523c3f56a14ed65e718d7.png" IsResponsive="True" Reference="qmDWxQbGnUq14r6bGQX8XA/1QfdzqW81EuS-DA5opkJXw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="559, 673, 154, 30" ElementType="Text" FriendlyName="'title'" FullSelectorArgument="&lt;webctrl tag='LABEL' aaname='Title' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' aaname='Title' check:text='TitleRequired' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'format'" sap:VirtualizedContainerService.HintSize="451.2,197.6" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://us.openforms.com/Form/1761c561-177c-4f91-9d1d-30d88b3dff75" ContentHash="01hOFVop2ECWTxTrptYYtg" DesignTimeRectangle="559, 599, 151, 31" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'format'" FullSelectorArgument="&lt;webctrl aaname='E-audiobook' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='E-audiobook' tag='LABEL' check:text='unchecked' /&gt;" Guid="12f93b51-ec07-48d4-b633-6de977779126" InformativeScreenshot="cd6fd839d7c21a645597e8cd16e6ab4f.png" Reference="qmDWxQbGnUq14r6bGQX8XA/QMYyEjQHq0Cvlb_a2-33oQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="559, 426, 190, 38" FriendlyName="'format'" FullSelectorArgument="&lt;webctrl tag='LEGEND' aaname='Format ' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LEGEND' aaname='Format ' check:text='Format Required' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'submit'" sap:VirtualizedContainerService.HintSize="451.2,197.6" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="46b0a16f-10eb-43ee-b10d-6bb2e5920522" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://us.openforms.com/Form/1761c561-177c-4f91-9d1d-30d88b3dff75" ContentHash="2ONboV-mNkyEvXKKVc80cw" DesignTimeRectangle="1226, 1023, 165, 65" DesignTimeScaleFactor="1.25" FriendlyName="'submit'" FullSelectorArgument="&lt;webctrl tag='DIV' class='inner-border of-colour-secondary-inner-border' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' class='inner-border of-colour-secondary-inner-border' /&gt;" Guid="15104e2f-738b-4854-a246-0c4da94d7dd6" InformativeScreenshot="1a8eb14f6346bfeb63823573772fb7c9.png" Reference="qmDWxQbGnUq14r6bGQX8XA/N4Obj9TKQEKNzbOwODhFLA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="451.2,295.2" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,192" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="353.6,105.6" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Version="V3" />
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                    </ui:CommentOut>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="NJgTgYLamkuULxffolKddw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gYMAwISkQf3ogAAAtZJREFUWEfVl8trU0EUxq8gqK3xX6huLfWB+Nj4gNbk5ilVosSFVk2TUgU3Lgoi7aLUheBrISjuVMRqadHkBhXrG9xVcF3UjQ8sCi6qtZr6O2EulLRJ596bXHHgYyZn7pzvmzNnJjOGbkkFh4wDbYOL2kP3ViTM/PqYmc/Ewtb1aNh6GwkXZqhf7zJzq+hTIzyW1M4h43DrTSEM4LQZwhSE5yB6Fg0XPkL6S4hnYTpmWnvoVx5cFiHeGntsxM38Zggv4vAlhJ8h+F1GOAd8nyYKGxNmLoFoQRxswyaTUAwLFD4WLIP4wXwkVVAkAkfVuCKYVphEWK/RMWUkQyOKpUphgCAAXoH5iCpBBBwjWqPlfYh6uDc4sjQZ9EWANUcAEXgCeUO9BcwgoJPli5ADXSBNHl0QO6KeEv4GrSXgY4FbAV2glxkPg9v4eVGys3OYfaNWBHAgqGkOIEA/Av+7gG7IrhD6N2AMjEufXwLsJNxCArZTx0nCPuxFhOgLYJAgQCjdREAOohztSfBd1c4iIEcmcCvAew44FCB/SD9V238BOB5gubK0f5R+m1aGsUlsPeAEuCp2RzngRACOLyPiFO0p+Y2ALDiOXXbCJZBX39VtCeRf74/d/hc5MBu1EcC6lbYhA90I6CbcXNMK76nHqeXm5EwATrwcRHIj2sBBFKEOMpGT2J0dRB4ESATkILpD+wuQ2X+VPr8iUJscYAZu7wO1EcAALzeiLOuepj4DTkM8KHZHOcAATwIgPQhhP+gDN8Tul4DqS+DDpbSiACJgcS1fohUB9q/9MLlf7mgB2NtwGBHfwAS2Cep32DM7oo8MrQjs52m2PToqp+EmQnceh89x8glnOk+zI4hv4iBaC9ZwpLeApt2hu4t5YyoGzSJvxI7WW/I4XY6T1TxO90FwVhIKQR8grM/jtFKRyBxqKwmS5/k6BHUi6BqE9vN8jNmvpE+N0CmG8RfoqajWL0kEIQAAAABJRU5ErkJggg==" InformativeScreenshot="0c8f26bf51a449d7c279a123023a6a73.jpg" Reference="qmDWxQbGnUq14r6bGQX8XA/wVeBDdSOS0muxvVmuue_OA" Selector="&lt;html app='chrome.exe' title='Suggest a Purchase' /&gt;" Title="Suggest a Purchase" Url="https://us.openforms.com/Form/1761c561-177c-4f91-9d1d-30d88b3dff75" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+  </Sequence>
+</Activity>

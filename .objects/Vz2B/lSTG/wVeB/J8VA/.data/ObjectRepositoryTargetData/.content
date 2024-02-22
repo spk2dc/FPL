@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="trItjHTd4E-kMH55rN3uMA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://us.openforms.com/Form/1761c561-177c-4f91-9d1d-30d88b3dff75" DesignTimeRectangle="559, 508, 800, 48" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT field-data-144994…'" FullSelectorArgument="&lt;webctrl tag='INPUT' aaname='PhoneRequired' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' aaname='PhoneRequired' /&gt;" Guid="3ba6aec1-2425-460c-9b66-d66b39f515ec" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Suggest a Purchase' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="559, 461, 177, 30" ElementType="Text" FriendlyName="'PhoneRequired'" FullSelectorArgument="&lt;webctrl tag='LABEL' aaname='Phone' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' aaname='Phone' check:text='PhoneRequired' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="12ee055fc4d3488ce179bce2f65f832a.png" xmlns="">0DedUlbQhZkafbzHPiz6Rhg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
